@@ -27,5 +27,6 @@ urlpatterns = [
     path('login/', auth_views.LoginView.as_view(template_name='authentication/login.html'), name='login'),
     path('logout/', auth_views.LogoutView.as_view(), name='logout'),
     path('register/', account_views.register_view, name='register'),
-    path('home/', blog_views.home_view, name='home')
+    path('home/', blog_views.home_view, name='home'),
+    path('post/new', blog_views.post_add_view, name='post_add')
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

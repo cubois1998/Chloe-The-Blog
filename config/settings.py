@@ -138,10 +138,15 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 MEDIA_URL = '/images/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
 '''
-
+'''
 AWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_STORAGE_BUCKET_NAME')
 AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
 AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+'''
+
+AWS_STORAGE_BUCKET_NAME = 'chloe-the-blog-files'
+AWS_ACCESS_KEY_ID = 'AKIA56TV3E5XISZ27B7A'
+AWS_SECRET_ACCESS_KEY = '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'
 
 AWS_S3_FILE_OVERWRITE = False
 AWS_DEFAULT_ACL = None

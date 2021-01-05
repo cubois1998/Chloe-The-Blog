@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="container border-dark bg-light p-3 rounded mt-3" style="width:36rem;">
+   <form method="post" action="" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <div class="form-group mb-2 mt-2">
+            <button type="submit" class="btn btn-outline-success">Save and Post!</button>
+        </div>
+    </form>
+</div>
+{% endblock content %}
